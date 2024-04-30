@@ -1,0 +1,78 @@
+/* Estilos para el video de fondo */
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000; /* Asegura que el video esté detrás de otros elementos */
+    background-size: cover;
+}
+
+/* Estilos para las tarjetas de provincia */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Estilos para el contenedor de las tarjetas */
+#provinces-list {
+    margin-top: 20px;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    margin-top: 50px;
+}
+
+/* Media query para dispositivos de tamaño medio (2 columnas) */
+@media (max-width: 992px) {
+    .card {
+        flex: 0 0 50%; /* 2 columnas */
+    }
+}
+
+/* Media query para dispositivos pequeños (1 columna) */
+@media (max-width: 767px) {
+    .card {
+        flex: 0 0 100%; /* 1 columna */
+    }
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #6eb0f3; /* Color de fondo */
+    color: #333; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alinear el texto al centro */
+    position: fixed; /* Fijar el footer en la parte inferior de la ventana */
+    width: 100%; /* Ancho completo */
+    bottom: 0; /* Alinear en la parte inferior */
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+}
+
+p {
+    margin: 0; /* Eliminar el margen por defecto del párrafo */
+}
